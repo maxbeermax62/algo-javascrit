@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*//les donnees en entrée
+        var qte = prompt("la quantité");
+        qte = parseInt("qte");
+        const unitPrice = 12;
+        var taux = 20;
+
+        // le calcul
+        const unitPrice = 12;
+        ht = qte * unitPrice;
+        
+
+        if (ht > 400 ){
+            ttc = (ht * 0.95) * 1.2;
+        } else if ( ht <1200 ) {
+            ttc = (ht * 0.90)*1.2;
+        }
+        
+        // la sortie
+        console.log(ttc);*/
+
+        //correction
+        //demande la saisie de la quantité
+        var qt = prompt("quantité");
+
+        //définir le prix unitaire
+        const unitPrice = 12;
+
+        //définire le taux tva
+        const saleTaxe = 1.2;
+
+        //définir les remises
+        const discountOneCondition = 400;
+        const discountOneRate = 0.95;
+        const discountTwoCondition = 1200;
+        const discountTwoRate = 0.90;
+
+        //convertir la saisie en nombre
+        qt = parseInt(qt);
+
+        // calculer le montant ht
+
+        var ht = qt * unitPrice;
+
+        //définir le montant remisé
+        if ( ht >= discountTwoCondition){
+            ht = ht * discountTwoRate;
+        } else if (ht >= discountOneCondition){
+            ht = ht * discountOneRate;
+        }
+
+        //calcul di montant ttc
+        var ttc = ht * saleTaxe;
+
+        console.log(ttc);
+
+
+
+
+        
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

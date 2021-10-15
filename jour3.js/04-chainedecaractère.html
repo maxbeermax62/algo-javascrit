@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="target"></div>
+    <script>
+
+       /* var output = document.getElementById("target");
+
+        var html = "<ul>";
+
+        var txt = prompt("entrez un texte");
+
+        for (var i = txt.length - 1; i >= 0; i--) {
+            html += "<li>" + txt.charAt(i) + "</li>";
+
+        }
+
+        html += "</ul>";
+        output.innerHTML = html;*/
+
+
+        /*//boucler sur les indices de la chaine de 0 a taille de la chaine -1
+        for (index in txt){
+            console.log(index + "="+ txt.charAt(index));
+        }
+            
+        // boucler sur les caractère
+        for (letter of txt){
+            console.log(letter);
+        }*/
+            
+        
+        /*var txt = prompt("Entrez un texte");
+        var found = false;
+
+        for (var i = 0; i < txt.length; i++) {
+            code = txt.charCodeAt(i)
+            if (code >= 65 && code <= 90) {
+                found = true;
+                // On a trouvé une capitale
+                // inutile de continuer la boucle
+                break;
+            }
+        }*/
+        /*for (index in txt){
+            console.log(index + "="+ txt.charAt(index));
+        }
+            
+        // boucler sur les caractère
+        for (letter of txt){
+            console.log(letter);
+        }
+        console.log(i);*/
+        
+
+
+
+        /*var txt = prompt("Entrez un texte");
+        var isNumber = true;
+
+        for (var i = 0; i < txt.length; i++) {
+            code = txt.charCodeAt(i)
+            if (! (code >= 48 && code <= 57)) {
+                isNumber = false;
+                break;
+            
+            }
+        }
+        console.log(isNumber);*/
+
+        var email = prompt("Entrez un texte");
+        var hasArobase = false
+        var isValideEmail = true;
+        var hasDote = false
+
+        for (index in email) {
+            // le caractère
+            char = email.charAt(index);
+
+            // un espace dans l'email l'arret de la boucle et un double @
+            if(char == " " || (char == "@" && hasArobase)){
+                isValideEmail = false;
+                break;
+            }
+
+            // test de l'existence d'un point
+            if (char == "." && index > 0 && index < email.length-1){
+                hasDot = true;
+            }
+            // test de l'existence d'un arobase
+            if (char == "@" && index > 0 && index< email.length-1){
+                hasArobase = true;
+            }
+                
+                
+            
+            
+        }
+        isValideEmail = isValideEmail && hasArobase && hasDote;
+        console.log(isValideEmail);
+    </script>
+
+
+</body>
+
+</html>

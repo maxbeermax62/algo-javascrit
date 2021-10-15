@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouve majuscule</title>
+</head>
+<body>
+    <script>
+        var txt = prompt("Entrez un texte");
+        var found = false;
+        var foundIndex = -1;
+        for (var i = 0; i < txt.length; i++) {
+            code = txt.charCodeAt(i)
+            if (code >= 65 && code <= 90) {
+                found = true;
+                // Index de la lettre majuscule trouvée
+                foundIndex = i;
+                // On a trouvé une capitale
+                // inutile de continuer la boucle
+                break;
+            }   
+        }
+        console.log(foundIndex);
+    </script>
+</body>
+</html>

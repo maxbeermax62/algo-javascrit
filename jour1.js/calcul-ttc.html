@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcul ttc</title>
+
+    <script>
+        /*// les données en entrée
+        var ht = prompt("le montant");
+        var taux = prompt("le taux tva");
+
+        //le calcul
+        var ttc = ht*1 + (ht * taux/100);
+
+        //la sortie
+        console.log(typeof ht);
+        console.log(ttc);*/
+
+        var ht = prompt("le montant");
+        var taux = prompt("le taux de tva");
+        var saisieValide = true;
+        //convertion en nombre
+        ht = parseFloat(ht);
+        taux = parseFloat(taux);
+
+        if (isNaN (ht)){
+            console.log("incorrecte");
+            saisieValide = false;
+        } 
+
+        if(isNaN(taux)){
+            console.log("incorrecte");
+            saisieValide = false;
+        }
+
+        if(saisieValide == true){
+            var ttc = ht * 1 + (ht * taux / 100);
+            console.log(ttc);
+        }
+
+
+
+        console.log(ht);
+        console.log(taux);
+
+        /*if (ht <100){
+            console.log("inférieur");
+        } else {
+            console.log("supérieur");
+        }*/
+
+        /*var ht = prompt("le montant");
+        var taux = prompt("le taux tva");
+        console.log(ht*1)
+
+        if(isNan(ht*1)){
+            console.log("saisie incorrecte")
+        } if(isNaN(ht*1)/taux)
+        else if(ht <100){
+            console.log("inferieur");
+        } else{
+            console.log("supérieur");
+        }*/
+
+        /*var ht = prompt("le montant");
+
+        ht = parseInt(ht);
+
+        if(ht == null){
+            console.log("saisie incorrecte")
+        } else if (ht <100){
+            console.log("inférieur");
+        } else{
+            console.log("supérieur");
+        }
+
+
+        /*celsius 
+        var celsius = prompt("temperature en degrée");
+       
+
+        var fahrenheit = ( celsius * (9/5)) +32;
+
+        console.log(fahrenheit);
+        
+        
+        parseInt(5.87)// 5
+        // pied
+        var pied_par_centimetre = 30.48;
+        var cm = prompt ("taille centimètre");
+
+        var pied = cm / pied_par_centimetre;
+        pied = parseInt(pied)
+
+        console.log(pied);*/
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

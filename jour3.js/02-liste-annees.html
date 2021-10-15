@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des années</title>
+</head>
+<body>
+    <select>
+        <option>java</option>
+        <option>PHP</option>
+        <option>Python</option>
+    </select>
+
+    <!-- afficher les 10 prochaines années -->
+
+    <select id="annees">
+        <option></option>
+        <script>
+            // l'année en cours
+            var currentYear = new Date().getFullYear();
+            
+            //definition de la variable
+            var option ="";
+
+            for (year = currentYear; year <=currentYear + 10; year++) {
+               option += "<option>" + year + "</option>";
+            }  /*console.log(year);*/
+
+
+            //affichge navigateur 
+            const selectYear = document.getElementById("annees");
+            
+            // ecriture dans la cible
+            selectYear.innerHTML = option;
+            
+
+
+        </script>
+    
+    
+    </select>
+
+    <script>
+        
+    </script>
+
+
+</body>
+</html>

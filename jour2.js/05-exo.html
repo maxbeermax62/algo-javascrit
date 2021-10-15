@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        /* //vous rencontrez un troll dans la fôret
+ 
+         var action = prompt("choissir les actions 1,2 ou 3");
+        
+         const actionFuir= 1;
+         const actionSeCacher= 2;
+         const actionCombattre=3 ;
+ 
+         //l'action
+         if (action == actionFuir ){
+             const isFast ('est-tu rapide?')
+             if (isFast){
+                 console.log('vous vous sauvez de justesse')     
+             } else {
+             console.log('le troll vous mange')
+             }// fermeture fe fuite
+         }
+         if (action == 2){
+             choix = confirm('tu veux te combattre')
+             var combattre = confirm
+         }if 
+         
+         
+         
+         
+         
+         
+         
+         
+         action == 3*/
+
+
+        //constante
+        const actionFuir = 1;
+        const actionSeCacher = 2;
+        const actionCombattre = 3;
+        //situation de départ  
+        message = "rencontre un troll 1:fuir\t2: se cacher\t3: combattre";
+
+        const action = prompt(message);
+
+        if (action == actionFuir) {
+            const isFast = confirm('est-tu rapide');
+            if (isFast) {
+                alert('vous vous sauvez');
+            } else {
+                alert('le troll vous mange');
+            }// fermeture de la fuite
+        }else if (action == actionSeCacher) {
+            const isStealthy = confirm('est-tu furtif');
+            if (isFast) {
+                alert('vous vous cachez');
+            } else {
+                alert('le troll vous mange');
+            }// fermeture de la fuite
+        } else if (action == actionCombattre) {
+            const isStrong = confirm('est-tu fort');
+            if (isStrong) {
+                alert('vous massacrez le troll');
+            } else {
+                alert('le troll vous mange');
+            }// fermeture du combat
+        } else {
+            alert("vous devez choisir une action valide");
+        }
+
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

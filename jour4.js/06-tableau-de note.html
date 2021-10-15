@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="target"></div>
+
+    <script>
+        
+        const notes = [10, 15, 20, 5, 1, 18, 20, 3];
+
+        // calculer la moyenne des notes
+
+        //la somme de toute les notes
+        let total = 0;
+        let max = 0;
+        for (n of notes) {
+            total += n;
+            if (max < n){
+                max = n;
+            }
+        }
+        // la moyenne
+        let average =total / notes.length;
+
+        console.log(average);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //parseInt(5.87)// 5
+        // pied
+        //var pied_par_centimetre = 30.48;
+        //var cm = prompt ("taille centimètre");
+        
+        //calcul
+        //var pied = cm / pied_par_centimetre;
+        //pied = parseInt(pied)
+        
+        //resultat
+       // console.log(pied);
+        
+        //calcul de cm % pied
+        //var reste = cm % pied_par_centimetre;
+        //var reste = cm - (pied * pied_par_centimetre);
+
+       // var pouce = reste /2.54;
+       // pouce = parseInt(pouce);
+
+        //console.log(pouce);
+        
+        corection
+        
+        //la taille en cm
+
+        var sizeInCm = promt ("taille en cm");
+        var cmInAFoot = 30.48;
+        var cmInInch = 2.54;
+
+        // calcul
+        //on determine combien on a de pied dans la taille en cm
+        
+        var feet = sizeInCm / cmInAFoot;
+        
+        //on calcul combien de cm il reste à attribuer aux pouces
+        
+        var remains = sizeInCm % cmInAFoot;
+        
+        //on determine combien il y a de pouces dans le reste
+
+        var inches = remains / cmInAnInch;
+
+        // conversion en entier
+
+        feet = parseInt(feet);
+        inches = parseInt(inches);
+
+        //affichage resultat
+        console.log("vous faites " + feet +"pied et " + inches + "pouces ");
+
+        
+
+
+
+         
+
+
+    
+    
+    
+    
+    
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

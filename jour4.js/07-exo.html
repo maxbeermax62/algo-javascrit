@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+       
+        let valeur = prompt("entrez votre chiffe");
+        const notes = [10, 15, 20, 5, 1, 18, 20, 3];
+
+        function search(notes,valeur) {
+            let find = false;
+            valeur = parseInt(valeur);
+
+
+            for (i of notes) {
+                if (valeur == i) {
+                    find = true;
+                    break;
+                } 
+            }
+            return find
+        }
+
+        console.log(search(notes , valeur));
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

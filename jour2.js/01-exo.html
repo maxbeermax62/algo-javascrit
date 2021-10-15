@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo</title>
+
+    <script>
+        //demander la saisie de l'âge
+        var age = prompt("votre âge");
+        
+        //convertir la saisie de l'âge
+        age = parseInt(age);
+
+        console.log(age);
+
+
+        //tester la saisie est un nombre et de 7 à 77
+        if(isNaN(age)){
+            console.log("vous devez saisir un nombre");
+        } else if ( 7<= age && age <=77) {
+            console.log("c'est bon tintin");
+        } else {
+            console.log("ce n'est pas bon  tintin");
+        }
+
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
